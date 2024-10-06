@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&family=Playwrite+DE+Grund:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh Foods Sign Up</title>
+  </head>
+
+  <body>
+    <div class="bodyWrapper">
+      <header>
+        <div class="headerSection">
+          <div class="headerText">
+            <h1>Fresh Foods Sign Up</h1>
+          </div>
+          <div class="logoIcon">
+            <a href="index.html">
+              <img
+                src="../Images/FreshFoodsIcon.png"
+                alt="Icon for Fresh Foods"
+              />
+            </a>
+          </div>
+          <img
+            src="../Images/freshFoodsBanner.png"
+            alt="Fresh Foods Banner"
+            id="bannerImage"
+          />
+        </div>
+
+        <div class="fruitStacks">
+          <div class="leftFruitStack">
+            <img
+              src="../Images/Fruit/Apple.png"
+              alt="Image of Apple"
+              width="150"
+            />
+            <img
+              src="../Images/Fruit/Banana.png"
+              alt="Image of Banana"
+              width="150"
+            />
+            <img
+              src="../Images/Fruit/Lychee.png"
+              alt="Image of a Lychee"
+              width="150"
+            />
+          </div>
+          <div class="rightFruitStack">
+            <img
+              src="../Images/Fruit/Orange.png"
+              alt="Image of an Orange"
+              width="150"
+            />
+            <img
+              src="../Images/Fruit/Pear.png"
+              alt="Image of a Pear"
+              width="150"
+            />
+            <img
+              src="../Images/Fruit/Pineapple.png"
+              alt="Image of a Pineapple"
+              width="150"
+            />
+          </div>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html" class="navButton">Home Page</a></li>
+            <li><a href="signup.html" class="navButton">Sign Up</a></li>
+            <li><a href="support.html" class="navButton">Support</a></li>
+          </ul>
+        </nav>
+      </header>
+      <form id="signupForm" action="#" method="post">
+        <label for="name">Full Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="John Doe"
+          required
+        /><br /><br />
+
+        <label for="email">Email Address:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="john@gmail.com"
+          required
+        /><br /><br />
+
+        <label for="address">Address</label><br />
+        <input
+          type="text"
+          id="address"
+          name="address"
+          placeholder="123 Avenue, Middle Earth"
+          required
+        /><br /><br />
+
+        <label for="password">Password:</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="TheOneRing12#$"
+          minlength="8"
+          title="Password must contain a minimum of 8 characters"
+          required
+        /><br /><br />
+
+        <label for="confirmPassword">Confirm Password:</label><br />
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          placeholder="TheOneRing12#$"
+          required
+        /><br /><br />
+
+        <input type="submit" value="Sign Up" aria-label="Submit the form" />
+        <br /><br />
+        <input type="reset" aria-label="Reset the form" />
+      </form>
+    </div>
+    <footer>
+      <p>© 2024 Fresh Foods. All rights reserved.</p>
+    </footer>
+    <script src="../JavaScript/script.js"></script>
+  </body>
+</html>
